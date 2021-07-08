@@ -1,0 +1,138 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+}
+
+h1{
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 27px;
+}
+
+p{
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 27px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+    color: var(--very-light-gray);
+}
+
+.container .orange{
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+    padding: 50px;
+}
+
+.container .blue{
+    background-color: var(--dark-cyan);
+    padding: 50px;
+}
+
+.container .green{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+    padding: 50px;
+}
+
+button{
+    background-color: var(--very-light-gray);
+    border: 0;
+    width: 125px;
+    height: 40px;
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+
+
+.orange button{
+    color: var(--bright-orange);
+}
+
+.blue button{
+    color: var(--dark-cyan);
+}
+
+.green button{
+    color: var(--very-dark-cyan);
+}
+
+button:active{
+    border: 2px solid var(--very-light-gray);
+    background-color: transparent;
+    color: var(--very-light-gray);
+}
+
+img{
+    margin-bottom: 27px;
+}
+
+@media (min-width: 1440px){
+
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        top: 150px;
+        left: 13%;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    .container .orange{
+        border-radius: 10px 0 0 10px;
+        width: 300px;
+        height: 500px;
+    }
+
+
+    .container .green{
+        width: 300px;
+        height: 500px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .container .blue{
+        width: 300px;
+        height: 500px;
+    }
+
+    p{
+        margin-bottom: 100px;
+    }
+
+    .attribution{
+        position: relative;
+        margin-top: 200px;
+    }
+}
